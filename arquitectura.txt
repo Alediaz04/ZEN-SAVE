@@ -1,0 +1,30 @@
+zen-save/
+├── frontend/
+│   ├── src/
+│   │   ├── assets/          # Imágenes, íconos y logo de Zen Save
+│   │   ├── components/      # Componentes reutilizables (Botones, Inputs, Cards)
+│   │   ├── pages/           # Vistas principales (Login, Register, Wallet, Chatbot, Dashboard, Profile)
+│   │   ├── store/           # Archivos de Zustand (authStore.js, walletStore.js)
+│   │   ├── services/        # Llamadas a la API (axios)
+│   │   ├── theme/           # Configuración de Tailwind y colores (Verde vibrante, Dark/Light)
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   ├── package.json
+│   └── tailwind.config.js
+└── backend/
+    ├── app/
+    │   ├── api/
+    │   │   ├── auth.py            # Gestión de identidad y JWT
+    │   │   ├── wallet.py          # Motor de transacciones y saldos
+    │   │   ├── analytics.py       # Análisis y gráficas (para Recharts)
+    │   │   ├── ai_integration.py  # Integración con Google Gemini
+    │   │   └── profile.py         # Configuración y temas
+    │   ├── core/
+    │   │   ├── security.py        # Hashing y validación JWT
+    │   │   └── config.py          # Variables de entorno
+    │   ├── db/
+    │   │   ├── database.py        # Conexión SQLite/SQLAlchemy
+    │   │   └── models.py          # Modelos de datos
+    │   ├── schemas/               # Esquemas Pydantic para validación de datos
+    │   └── main.py                # Punto de entrada de FastAPI
+    └── requirements.txt
